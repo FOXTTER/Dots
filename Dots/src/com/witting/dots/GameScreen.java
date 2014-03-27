@@ -57,7 +57,7 @@ public class GameScreen extends ImageView {
 	Paint p = new Paint();
 	protected void onDraw(Canvas c) {
 		if (player.checkCollision(goal)) {
-			goal.x = (float)Math.random()*800;
+			goal.x = (float)Math.random()*900;
 			goal.y = (float)Math.random()*1600;
 			list.add(spawnEnemy());
 		}

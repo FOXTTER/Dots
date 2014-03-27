@@ -10,7 +10,7 @@ public class Ball {
 	private float xSpeed;
 	private float ySpeed;
 	public float r;
-	private static float width = 800;
+	private static float width = 900;
 	private static float height = 1600;
 	private Paint color = new Paint();
 	public Ball(float x, float y, float r, int col){
