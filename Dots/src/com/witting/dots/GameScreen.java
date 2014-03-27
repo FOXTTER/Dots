@@ -52,7 +52,8 @@ public class GameScreen extends ImageView {
 		});
 	}
 	public Ball spawnEnemy(){
-		return new Ball();
+		//Her spawner en ny fjende ud fra spillerens koordinater
+		return new Ball(player.x,player.y);
 	}
 	Paint p = new Paint();
 	protected void onDraw(Canvas c) {

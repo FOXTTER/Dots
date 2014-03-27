@@ -22,8 +22,17 @@ public class Ball {
 		xSpeed = 0;
 		ySpeed = 0;
 	}
-	public Ball(){
-		this(40 + (float)Math.random()*height-50,40+(float)Math.random()*width-50, 40,Color.RED);
+	public Ball(float playerX, float playerY){
+		this(0,0, 40f,Color.RED);
+		//Din kode er blevet sat ind her.
+		this.x = (float)Math.random()*800;
+		this.y = (float)Math.random()*1600;
+		while(this.x<playerX+100 & this.x>playerX-100) {
+			this.x = (float)Math.random()*width;
+		}
+		while(this.y<playerY+100 & this.y>playerY-100) {
+			this.y = (float)Math.random()*height;
+		}
 		Boolean selector = 0.5 < Math.random();
 		xSpeed = (selector ? 0 : 10);
 		ySpeed = (!selector ? 0 : 10);
